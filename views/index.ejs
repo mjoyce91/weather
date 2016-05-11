@@ -103,7 +103,7 @@
       <div style="condDiv">
         <img id="weatherImg" ng-src="{{image}}"/>
         <br>
-        <span id="condText">{{weather.item.condition.text}}</span>
+        <span id="condText"><b>{{weather.item.condition.text}}</b></span>
       </div>
 
       <br>
@@ -121,7 +121,7 @@
       <div ng-repeat="x in weather.item.forecast | limitFromTo: 1 : 6">
         <div id="forecastTempDiv">
           <center>
-            {{x.high}}° / {{x.low}}°
+            <b>{{x.high}}° / {{x.low}}°</b>
           </center>
         </div>
       </div
